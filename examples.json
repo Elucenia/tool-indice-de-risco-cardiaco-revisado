@@ -1,0 +1,46 @@
+[
+  {
+    "label": "Nenhum fator: classe I",
+    "input": {},
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": [],
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+    "input": {
+      "cir": true,
+      "insulina": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid"
+    },
+    "originalInput": {
+      "cir": true,
+      "insulina": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+    "input": {
+      "cir": true,
+      "dac": true,
+      "cr": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "high"
+    },
+    "originalInput": {
+      "cir": true,
+      "dac": true,
+      "cr": true
+    },
+    "expandedZeroOptions": []
+  }
+]
