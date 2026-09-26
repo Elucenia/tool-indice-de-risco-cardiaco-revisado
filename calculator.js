@@ -1,11 +1,11 @@
-/* tool-indice-de-risco-cardiaco-revisado · Elucenia · https://github.com/Elucenia/tool-indice-de-risco-cardiaco-revisado
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-indice-de-risco-cardiaco-revisado · ELUCENIA · https://github.com/Elucenia/tool-indice-de-risco-cardiaco-revisado
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"indice-de-risco-cardiaco-revisado","title":"Índice de Risco Cardíaco Revisado (Lee)","fields":[["cir","Cirurgia de alto risco (intraperitoneal, intratorácica ou vascular suprainguinal)","chk",{"pts":1}],["dac","Doença isquêmica do coração (IAM prévio, angina, teste de isquemia positivo, uso de nitrato ou onda Q no ECG)","chk",{"pts":1}],["icc","Insuficiência cardíaca (história, edema pulmonar, dispneia paroxística noturna, B3 ou congestão na radiografia)","chk",{"pts":1}],["avc","Doença cerebrovascular (AVC ou AIT)","chk",{"pts":1}],["insulina","Diabetes em uso de insulina","chk",{"pts":1}],["cr","Creatinina pré-operatória &gt; 2,0 mg/dL","chk",{"pts":1}]],"config":{"unit":"","label":"RCRI","fields":[["cir","chk",1],["dac","chk",1],["icc","chk",1],["avc","chk",1],["insulina","chk",1],["cr","chk",1]],"bands":[[0,"low","Classe I: 0,4% de complicações cardíacas maiores (Lee); 3,9% de morte, IAM ou PCR em 30 dias (CCS 2017)",""],[1,"mid","Classe II a III: 0,9% (1 ponto) a 6,6% (2 pontos) pela coorte de Lee; 6,0% a 10,1% pela CCS 2017","Considere BNP/NT-proBNP pré-operatório e troponina pós-operatória, conforme a diretriz."],[3,"high","Classe IV: 11% de complicações cardíacas maiores (Lee); 15% de morte, IAM ou PCR em 30 dias (CCS 2017)","Alto risco: avaliação cardiológica, otimização clínica e vigilância pós-operatória com troponina."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
