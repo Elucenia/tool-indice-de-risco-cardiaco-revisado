@@ -5,6 +5,7 @@
     "short": "Risco cardíaco em cirurgia não cardíaca",
     "desc": "Calcule o Índice de Risco Cardíaco Revisado de Lee (RCRI) para risco de complicações cardíacas maiores em cirurgia não cardíaca, com as taxas de Lee e da CCS.",
     "lead": "Estima o risco de complicações cardíacas maiores (infarto, edema pulmonar, fibrilação ventricular, parada cardíaca ou bloqueio AV total) após cirurgia não cardíaca, com seis fatores clínicos.",
+    "kind": "Escore",
     "spec": [
       "anestesiologia",
       "cardiologia",
@@ -12,115 +13,45 @@
       "cirurgia-geral",
       "geriatria"
     ],
-    "tier": 1,
     "fields": [
       [
         "cir",
         "Cirurgia de alto risco (intraperitoneal, intratorácica ou vascular suprainguinal)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "dac",
         "Doença isquêmica do coração (IAM prévio, angina, teste de isquemia positivo, uso de nitrato ou onda Q no ECG)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "icc",
         "Insuficiência cardíaca (história, edema pulmonar, dispneia paroxística noturna, B3 ou congestão na radiografia)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "avc",
         "Doença cerebrovascular (AVC ou AIT)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "insulina",
         "Diabetes em uso de insulina",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "cr",
         "Creatinina pré-operatória &gt; 2,0 mg/dL",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "RCRI",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "low",
-          "Classe I: 0,4% de complicações cardíacas maiores (Lee); 3,9% de morte, IAM ou PCR em 30 dias (CCS 2017)",
-          ""
-        ],
-        [
-          1,
-          "mid",
-          "Classe II a III: 0,9% (1 ponto) a 6,6% (2 pontos) pela coorte de Lee; 6,0% a 10,1% pela CCS 2017",
-          "Considere BNP/NT-proBNP pré-operatório e troponina pós-operatória, conforme a diretriz."
-        ],
-        [
-          3,
-          "high",
-          "Classe IV: 11% de complicações cardíacas maiores (Lee); 15% de morte, IAM ou PCR em 30 dias (CCS 2017)",
-          "Alto risco: avaliação cardiológica, otimização clínica e vigilância pós-operatória com troponina."
-        ]
-      ]
-    },
     "formula": "<p>Um ponto para cada fator: cirurgia de alto risco, doença isquêmica do coração, insuficiência cardíaca, doença cerebrovascular, diabetes com insulina e creatinina &gt; 2,0 mg/dL.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Complicação cardíaca maior (Lee, 1999)",
-        "Morte, IAM ou PCR em 30 dias (CCS, 2017)"
-      ],
-      [
-        "0",
-        "0,4%",
-        "3,9%"
-      ],
-      [
-        "1",
-        "0,9%",
-        "6,0%"
-      ],
-      [
-        "2",
-        "6,6%",
-        "10,1%"
-      ],
-      [
-        "3 ou mais",
-        "11%",
-        "15%"
-      ]
-    ],
-    "tips": [
-      "As taxas originais de Lee subestimam o risco atual; a diretriz canadense (CCS 2017) recalibrou os valores para morte, infarto ou parada em 30 dias.",
-      "A diretriz ESC 2022 recomenda BNP ou NT-proBNP e troponina de base em pacientes com fatores de risco submetidos a cirurgia de risco intermediário ou alto.",
-      "O escore não substitui a avaliação da capacidade funcional: conseguir subir dois lances de escada (≥ 4 METs) indica baixo risco e em geral dispensa testes adicionais.",
-      "Em cirurgia vascular, o RCRI discrimina pior; considere ferramentas específicas."
-    ],
     "sources": [
       [
         "Lee TH et al. Derivation and prospective validation of a simple index for prediction of cardiac risk of major noncardiac surgery. Circulation, 1999.",
@@ -168,64 +99,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "RCRI",
-      "fields": [
-        [
-          "cir",
-          "chk",
-          1
-        ],
-        [
-          "dac",
-          "chk",
-          1
-        ],
-        [
-          "icc",
-          "chk",
-          1
-        ],
-        [
-          "avc",
-          "chk",
-          1
-        ],
-        [
-          "insulina",
-          "chk",
-          1
-        ],
-        [
-          "cr",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Classe I: 0,4% de complicações cardíacas maiores (Lee); 3,9% de morte, IAM ou PCR em 30 dias (CCS 2017)",
-          ""
-        ],
-        [
-          1,
-          "mid",
-          "Classe II a III: 0,9% (1 ponto) a 6,6% (2 pontos) pela coorte de Lee; 6,0% a 10,1% pela CCS 2017",
-          "Considere BNP/NT-proBNP pré-operatório e troponina pós-operatória, conforme a diretriz."
-        ],
-        [
-          3,
-          "high",
-          "Classe IV: 11% de complicações cardíacas maiores (Lee); 15% de morte, IAM ou PCR em 30 dias (CCS 2017)",
-          "Alto risco: avaliação cardiológica, otimização clínica e vigilância pós-operatória com troponina."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -234,17 +107,229 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T13:08:00.439Z",
+      "total": 64,
+      "passed": 64,
+      "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+      "evidenceSha256": "52360ca4cccc7b095b0de3b199fffda2e646b7a4dc92f325aa71eec61c4c7dfe",
+      "peerEvidencePath": "reports/review-20261003/eight-additive-source-oracles-independent-review-final23.json",
+      "peerEvidenceSha256": "64ff546626e0559b4f05f5eceb47e9cae355bfe7bc67f82744dbc3db60644f14",
+      "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+      "source": {
+        "keys": [
+          "cir",
+          "dac",
+          "icc",
+          "avc",
+          "insulina",
+          "cr"
+        ],
+        "kind": "boolean",
+        "domain": [
+          false,
+          true
+        ],
+        "url": "https://pubmed.ncbi.nlm.nih.gov/10477528/",
+        "edition": "Lee1999, DOI10.1161/01.cir.100.10.1043",
+        "locator": "Original abstract Methods and results: six predictors and counts0/1/2/≥3",
+        "access": "Original abstract read in primary indexed response2026-10-04; subsequent direct retrieval returned footer only. Count already classified predictors only. Clinical predictor adjudication, surgical selection and complication percentages not approved."
+      },
+      "implementations": [
+        {
+          "app": "website",
+          "id": "indice-de-risco-cardiaco-revisado",
+          "sha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
+        },
+        {
+          "app": "dashboard",
+          "id": "indice-de-risco-cardiaco-revisado",
+          "sha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
+        },
+        {
+          "app": "command-center",
+          "id": "indice-de-risco-cardiaco-revisado",
+          "sha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
+        }
+      ],
+      "qualifications": [],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "RCRI/Lee 1999:6 fatores, total 0–6; sem recalibração automática",
+    "implementationVersion": "indice-de-risco-cardiaco-revisado@native-2026-10-03+0a9994d9d620",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10477528/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto para cada fator: cirurgia de alto risco, doença isquêmica do coração, insuficiência cardíaca, doença cerebrovascular, diabetes com insulina e creatinina > 2,0 mg/dL.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "cir",
+            "label": "Cirurgia de alto risco (intraperitoneal, intratorácica ou vascular suprainguinal)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "dac",
+            "label": "Doença isquêmica do coração (IAM prévio, angina, teste de isquemia positivo, uso de nitrato ou onda Q no ECG)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "icc",
+            "label": "Insuficiência cardíaca (história, edema pulmonar, dispneia paroxística noturna, B3 ou congestão na radiografia)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "avc",
+            "label": "Doença cerebrovascular (AVC ou AIT)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "insulina",
+            "label": "Diabetes em uso de insulina",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "cr",
+            "label": "Creatinina pré-operatória &gt; 2,0 mg/dL",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "0331caaddf555810f9eb408a8161642d9c89f0b835466b43736b2672aecf51a1"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Lee TH et al. Derivation and prospective validation of a simple index for prediction of cardiac risk of major noncardiac surgery. Circulation, 1999.",
+          "url": "https://doi.org/10.1161/01.CIR.100.10.1043",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Derivation and prospective validation of a simple index for prediction of cardiac risk of major noncardiac surgery.",
+            "year": "1999",
+            "firstPublicationDate": "1999-09-01",
+            "doi": "10.1161/01.cir.100.10.1043",
+            "pmid": "10477528",
+            "journal": "Circulation",
+            "authors": "Lee TH, Marcantonio ER, Mangione CM, Thomas EJ, Polanczyk CA, Cook EF, Sugarbaker DJ, Donaldson MC, Poss R, Ho KK, Ludwig LE, Pedan A, Goldman L."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/10477528/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c4ddfb443f43f49f32025671ed5dadcccfa18a61a7eab505e212aee55bbbf1e9",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Duceppe E et al. Canadian Cardiovascular Society guidelines on perioperative cardiac risk assessment and management for patients who undergo noncardiac surgery. Can J Cardiol, 2017.",
+          "url": "https://doi.org/10.1016/j.cjca.2016.09.008",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Canadian Cardiovascular Society Guidelines on Perioperative Cardiac Risk Assessment and Management for Patients Who Undergo Noncardiac Surgery.",
+            "year": "2017",
+            "firstPublicationDate": "2016-10-04",
+            "doi": "10.1016/j.cjca.2016.09.008",
+            "pmid": "27865641",
+            "journal": "The Canadian journal of cardiology",
+            "authors": "Duceppe E, Parlow J, MacDonald P, Lyons K, McMullen M, Srinathan S, Graham M, Tandon V, Styles K, Bessissow A, Sessler DI, Bryson G, Devereaux PJ."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/27865641/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "57e32c25f6b66695217378fa3d98937155e53704fd2c13130d6b8d13cfd54357",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Halvorsen S et al. 2022 ESC Guidelines on cardiovascular assessment and management of patients undergoing non-cardiac surgery. Eur Heart J, 2022.",
+          "url": "https://doi.org/10.1093/eurheartj/ehac270",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "2022 ESC Guidelines on cardiovascular assessment and management of patients undergoing non-cardiac surgery.",
+            "year": "2022",
+            "firstPublicationDate": "2022-10-01",
+            "doi": "10.1093/eurheartj/ehac270",
+            "pmid": "36017553",
+            "journal": "European heart journal",
+            "authors": "Halvorsen S, Mehilli J, Cassese S, Hall TS, Abdelhamid M, Barbato E, De Hert S, de Laval I, Geisler T, Hinterbuchner L, Ibanez B, Lenarczyk R, Mansmann UR, McGreavy P, Mueller C, Muneretto C, Niessner A, Potpara TS, Ristić A, Sade LE, Schirmer H, Schüpke S, Sillesen H, Skulstad H, Torracca L, Tutarel O, Van Der Meer P, Wojakowski W, Zacharowski K, ESC Scientific Document Group."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/36017553/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T13:08:00.439Z",
+        "total": 64,
+        "passed": 64,
+        "evidencePath": "reports/review-20261003/eight-additive-source-oracles-final23.json",
+        "scope": "Entered discrete-point sum/count only. Original/full method conformance, input clinical adjudication, diagnostic/management decisions, prognosis, professional translations, rights and release approval are outside this test. Source-access and variant limits are retained.",
+        "caseEvidence": {
+          "schema": "independentArithmeticTest.cases",
+          "recordedEvidenceSha256": "0f0289a735064ebc32d26b80dcb8a1851dd5f96ab2e7d08ca84940bfe61c3c19"
+        }
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
+    },
+    "limits": "O RCRI original foi derivado em pessoas estáveis de pelo menos 50 anos submetidas a cirurgia não cardíaca eletiva de grande porte. As taxas são específicas das coortes históricas; não constituem calibração automática para cirurgia urgente, outras populações ou hospital atual. Definições de fatores e interpretação devem acompanhar a diretriz vigente.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.046Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não contém todas as definições de alto risco ou exclusões. Aplicação em urgência, pediatria ou novas taxas de diretrizes não comprovada por esse resumo."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/indice-de-risco-cardiaco-revisado/calculator.js",
+    "bytes": 5366,
+    "sha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "c144a7e52e6149fbb2341d3b6cfd1ebfdfcf8802fef9201b6d46c7f70e9b211e",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 64,
+      "sha256": "c072318991f4a6b12a7c627fda8235dec40f91338717266c3d7b8c8abba5dd52",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

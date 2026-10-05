@@ -1,46 +1,120 @@
 [
   {
-    "label": "Nenhum fator: classe I",
-    "input": {},
+    "id": "indice-de-risco-cardiaco-revisado",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Nenhum fator: classe I",
+    "originalInput": [],
+    "input": {
+      "cir": false,
+      "dac": false,
+      "icc": false,
+      "avc": false,
+      "insulina": false,
+      "cr": false
+    },
     "expected": {
       "score": 0,
       "level": "low"
     },
-    "originalInput": [],
-    "expandedZeroOptions": []
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "RCRI",
+      "raw": {
+        "score": 0
+      }
+    },
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Cirurgia abdominal em diabético com insulina: 2 pontos",
-    "input": {
+    "id": "indice-de-risco-cardiaco-revisado",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+    "originalInput": {
       "cir": true,
       "insulina": true
+    },
+    "input": {
+      "cir": true,
+      "insulina": true,
+      "dac": false,
+      "icc": false,
+      "avc": false,
+      "cr": false
     },
     "expected": {
       "score": 2,
       "level": "mid"
     },
-    "originalInput": {
-      "cir": true,
-      "insulina": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "RCRI",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
-    "input": {
+    "id": "indice-de-risco-cardiaco-revisado",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+    "originalInput": {
       "cir": true,
       "dac": true,
       "cr": true
+    },
+    "input": {
+      "cir": true,
+      "dac": true,
+      "cr": true,
+      "icc": false,
+      "avc": false,
+      "insulina": false
     },
     "expected": {
       "score": 3,
       "level": "high"
     },
-    "originalInput": {
-      "cir": true,
-      "dac": true,
-      "cr": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "pontos"
+      ],
+      "label": "RCRI",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

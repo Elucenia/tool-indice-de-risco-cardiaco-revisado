@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cir",
+    "input": {
+      "cir": "2",
+      "dac": false,
+      "icc": false,
+      "avc": false,
+      "insulina": false,
+      "cr": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cir"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean dac",
+    "input": {
+      "cir": false,
+      "dac": "2",
+      "icc": false,
+      "avc": false,
+      "insulina": false,
+      "cr": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "dac"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean icc",
+    "input": {
+      "cir": false,
+      "dac": false,
+      "icc": "2",
+      "avc": false,
+      "insulina": false,
+      "cr": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "icc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean avc",
+    "input": {
+      "cir": false,
+      "dac": false,
+      "icc": false,
+      "avc": "2",
+      "insulina": false,
+      "cr": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "avc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean insulina",
+    "input": {
+      "cir": false,
+      "dac": false,
+      "icc": false,
+      "avc": false,
+      "insulina": "2",
+      "cr": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "insulina"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean cr",
+    "input": {
+      "cir": false,
+      "dac": false,
+      "icc": false,
+      "avc": false,
+      "insulina": false,
+      "cr": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "cr"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
