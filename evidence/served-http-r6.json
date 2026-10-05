@@ -1,0 +1,705 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "indice-de-risco-cardiaco-revisado",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/indice-de-risco-cardiaco-revisado/calculator.js",
+    "sha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647",
+    "bytes": 5366
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 3,
+    "replayed": 3,
+    "passed": 3,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "indice-de-risco-cardiaco-revisado",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Nenhum fator: classe I",
+      "originalInput": [],
+      "input": {
+        "cir": false,
+        "dac": false,
+        "icc": false,
+        "avc": false,
+        "insulina": false,
+        "cr": false
+      },
+      "amendments": [
+        {
+          "kind": "recorded-array-to-field-object",
+          "original": []
+        },
+        {
+          "field": "cir",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "dac",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "icc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "avc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "insulina",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cr",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 0,
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "raw": {
+          "score": 0
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cir": false,
+            "dac": false,
+            "icc": false,
+            "avc": false,
+            "insulina": false,
+            "cr": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+          "startedAt": "2026-10-05T17:38:51.083Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-de-risco-cardiaco-revisado",
+              "main": [
+                "0",
+                "pontos"
+              ],
+              "label": "RCRI",
+              "raw": {
+                "score": 0
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "61a2ec75fba7492b546e79d6bd0ebaf48a2e00d5b45033b2d4896aef2a2633be",
+          "bytes": 145,
+          "elapsedMs": 3.048800000018673
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+        "startedAt": "2026-10-05T17:38:51.083Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-de-risco-cardiaco-revisado",
+            "main": [
+              "0",
+              "pontos"
+            ],
+            "label": "RCRI",
+            "raw": {
+              "score": 0
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "61a2ec75fba7492b546e79d6bd0ebaf48a2e00d5b45033b2d4896aef2a2633be",
+        "bytes": 145,
+        "elapsedMs": 3.048800000018673
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 0,
+            "obtained": 0,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "0",
+            "obtained": "0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "indice-de-risco-cardiaco-revisado",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+      "originalInput": {
+        "cir": true,
+        "insulina": true
+      },
+      "input": {
+        "cir": true,
+        "insulina": true,
+        "dac": false,
+        "icc": false,
+        "avc": false,
+        "cr": false
+      },
+      "amendments": [
+        {
+          "field": "dac",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "icc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "avc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "cr",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 2,
+        "level": "mid"
+      },
+      "recordedResult": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "raw": {
+          "score": 2
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cir": true,
+            "insulina": true,
+            "dac": false,
+            "icc": false,
+            "avc": false,
+            "cr": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+          "startedAt": "2026-10-05T17:38:51.396Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-de-risco-cardiaco-revisado",
+              "main": [
+                "2",
+                "pontos"
+              ],
+              "label": "RCRI",
+              "raw": {
+                "score": 2
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b914c4b37b4960800e16e66169b95d5825deeedd5e5a49fa968c67bd19ca2c5b",
+          "bytes": 145,
+          "elapsedMs": 2.5279000000155065
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+        "startedAt": "2026-10-05T17:38:51.396Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-de-risco-cardiaco-revisado",
+            "main": [
+              "2",
+              "pontos"
+            ],
+            "label": "RCRI",
+            "raw": {
+              "score": 2
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b914c4b37b4960800e16e66169b95d5825deeedd5e5a49fa968c67bd19ca2c5b",
+        "bytes": 145,
+        "elapsedMs": 2.5279000000155065
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "2",
+            "obtained": "2",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "indice-de-risco-cardiaco-revisado",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+      "originalInput": {
+        "cir": true,
+        "dac": true,
+        "cr": true
+      },
+      "input": {
+        "cir": true,
+        "dac": true,
+        "cr": true,
+        "icc": false,
+        "avc": false,
+        "insulina": false
+      },
+      "amendments": [
+        {
+          "field": "icc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "avc",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        },
+        {
+          "field": "insulina",
+          "kind": "recorded-implicit-negative-materialized",
+          "value": false
+        }
+      ],
+      "expected": {
+        "score": 3,
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "raw": {
+          "score": 3
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "cir": true,
+            "dac": true,
+            "cr": true,
+            "icc": false,
+            "avc": false,
+            "insulina": false
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+          "startedAt": "2026-10-05T17:38:51.710Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "indice-de-risco-cardiaco-revisado",
+              "main": [
+                "3",
+                "pontos"
+              ],
+              "label": "RCRI",
+              "raw": {
+                "score": 3
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "1bda9157798a87559136b7cc34017e806438de4ca4603e583fa790bf300d828f",
+          "bytes": 145,
+          "elapsedMs": 6.954100000002654
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/indice-de-risco-cardiaco-revisado/calculate",
+        "startedAt": "2026-10-05T17:38:51.710Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "indice-de-risco-cardiaco-revisado",
+            "main": [
+              "3",
+              "pontos"
+            ],
+            "label": "RCRI",
+            "raw": {
+              "score": 3
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "1bda9157798a87559136b7cc34017e806438de4ca4603e583fa790bf300d828f",
+        "bytes": 145,
+        "elapsedMs": 6.954100000002654
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.score",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "3",
+            "obtained": "3",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "pontos",
+            "obtained": "pontos",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
