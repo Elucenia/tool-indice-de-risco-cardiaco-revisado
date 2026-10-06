@@ -79,3 +79,26 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Class I: 0.4% major cardiac complications (Lee); 3.9% death, MI or CPR in 30 days (CCS 2017)
+
+
+### 2
+
+Class II to III: 0.9% (1 point) to 6.6% (2 points) by the Lee cohort; 6.0% to 10.1% by CCS 2017
+
+Consider preoperative BNP/NT-proBNP and postoperative troponin, as per the guideline.
+
+
+### 3
+
+Class IV: 11% major cardiac complications (Lee); 15% death, MI or CPR in 30 days (CCS 2017)
+
+High risk: cardiology evaluation, clinical optimization and postoperative troponin monitoring.
+

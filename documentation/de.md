@@ -79,3 +79,26 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Klasse I: 0,4 % schwere kardiale Komplikationen (Lee); 3,9 % Tod, MI oder CPR innerhalb von 30 Tagen (CCS 2017)
+
+
+### 2
+
+Klasse II bis III: 0,9 % (1 Punkt) bis 6,6 % (2 Punkte) in der Lee-Kohorte; 6,0 % bis 10,1 % nach CCS 2017
+
+Präoperatives BNP/NT-proBNP und postoperative Troponinbestimmung gemäß der Leitlinie in Betracht ziehen.
+
+
+### 3
+
+Klasse IV: 11 % schwere kardiale Komplikationen (Lee); 15 % Tod, MI oder CPR innerhalb von 30 Tagen (CCS 2017)
+
+Hohes Risiko: kardiologische Beurteilung, klinische Optimierung und postoperative Überwachung mit Troponin.
+

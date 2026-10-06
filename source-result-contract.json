@@ -1,0 +1,176 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "indice-de-risco-cardiaco-revisado",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "29ad200ff16c34dcadce4fbaf207ff43d1c76945",
+    "oldEngineSha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647",
+    "currentEngineSha256": "8327e59f987ed59faf1302b368a66671045e275398803101dfbee7c04d761b14"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Nenhum fator: classe I",
+      "input": {
+        "cir": false,
+        "dac": false,
+        "icc": false,
+        "avc": false,
+        "insulina": false,
+        "cr": false
+      },
+      "publicOutput": {
+        "id": "indice-de-risco-cardiaco-revisado",
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "raw": {
+          "score": 0
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 0,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "0",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "level": "low",
+        "verdict": "Classe I: 0,4% de complicações cardíacas maiores (Lee); 3,9% de morte, IAM ou PCR em 30 dias (CCS 2017)",
+        "note": "",
+        "raw": {
+          "score": 0
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+      "input": {
+        "cir": true,
+        "insulina": true,
+        "dac": false,
+        "icc": false,
+        "avc": false,
+        "cr": false
+      },
+      "publicOutput": {
+        "id": "indice-de-risco-cardiaco-revisado",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "level": "mid",
+        "verdict": "Classe II a III: 0,9% (1 ponto) a 6,6% (2 pontos) pela coorte de Lee; 6,0% a 10,1% pela CCS 2017",
+        "note": "Considere BNP/NT-proBNP pré-operatório e troponina pós-operatória, conforme a diretriz.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+      "input": {
+        "cir": true,
+        "dac": true,
+        "cr": true,
+        "icc": false,
+        "avc": false,
+        "insulina": false
+      },
+      "publicOutput": {
+        "id": "indice-de-risco-cardiaco-revisado",
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "raw": {
+          "score": 3
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 3,
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "3",
+          "pontos"
+        ],
+        "label": "RCRI",
+        "level": "high",
+        "verdict": "Classe IV: 11% de complicações cardíacas maiores (Lee); 15% de morte, IAM ou PCR em 30 dias (CCS 2017)",
+        "note": "Alto risco: avaliação cardiológica, otimização clínica e vigilância pós-operatória com troponina.",
+        "raw": {
+          "score": 3
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

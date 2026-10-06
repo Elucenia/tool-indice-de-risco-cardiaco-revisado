@@ -160,7 +160,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "RCRI/Lee 1999:6 fatores, total 0–6; sem recalibração automática",
-    "implementationVersion": "indice-de-risco-cardiaco-revisado@native-2026-10-03+0a9994d9d620",
+    "implementationVersion": "indice-de-risco-cardiaco-revisado@native-2026-10-05+8327e59f987e",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/10477528/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -299,7 +299,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
+      "implementationHash": "8327e59f987ed59faf1302b368a66671045e275398803101dfbee7c04d761b14",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "indice-de-risco-cardiaco-revisado@native-2026-10-03+0a9994d9d620",
+          "previousImplementationHash": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647",
+          "implementationHash": "8327e59f987ed59faf1302b368a66671045e275398803101dfbee7c04d761b14",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "0331caaddf555810f9eb408a8161642d9c89f0b835466b43736b2672aecf51a1",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O RCRI original foi derivado em pessoas estáveis de pelo menos 50 anos submetidas a cirurgia não cardíaca eletiva de grande porte. As taxas são específicas das coortes históricas; não constituem calibração automática para cirurgia urgente, outras populações ou hospital atual. Definições de fatores e interpretação devem acompanhar a diretriz vigente.",
     "sourceLimitEvidence": {
@@ -318,15 +346,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/indice-de-risco-cardiaco-revisado/calculator.js",
-    "bytes": 5366,
-    "sha256": "0a9994d9d62028f6abda9992599e55244b8fa4e8e1a0d95e8f748d7cb049d647"
+    "bytes": 5571,
+    "sha256": "8327e59f987ed59faf1302b368a66671045e275398803101dfbee7c04d761b14"
   },
-  "sourceToolSha256": "c144a7e52e6149fbb2341d3b6cfd1ebfdfcf8802fef9201b6d46c7f70e9b211e",
+  "sourceToolSha256": "c0a4563bc8ea62378bc0229f6eea40d394964813b546286e1019a0649f0b04a5",
   "omittedFullReferenceBanks": [
     {
       "rows": 64,
       "sha256": "c072318991f4a6b12a7c627fda8235dec40f91338717266c3d7b8c8abba5dd52",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

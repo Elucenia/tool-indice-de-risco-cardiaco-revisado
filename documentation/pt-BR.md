@@ -79,3 +79,26 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Classe I: 0,4% de complicações cardíacas maiores (Lee); 3,9% de morte, IAM ou PCR em 30 dias (CCS 2017)
+
+
+### 2
+
+Classe II a III: 0,9% (1 ponto) a 6,6% (2 pontos) pela coorte de Lee; 6,0% a 10,1% pela CCS 2017
+
+Considere BNP/NT-proBNP pré-operatório e troponina pós-operatória, conforme a diretriz.
+
+
+### 3
+
+Classe IV: 11% de complicações cardíacas maiores (Lee); 15% de morte, IAM ou PCR em 30 dias (CCS 2017)
+
+Alto risco: avaliação cardiológica, otimização clínica e vigilância pós-operatória com troponina.
+

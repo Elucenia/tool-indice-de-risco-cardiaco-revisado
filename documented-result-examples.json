@@ -1,0 +1,487 @@
+{
+  "id": "indice-de-risco-cardiaco-revisado",
+  "implementationVersion": "indice-de-risco-cardiaco-revisado@native-2026-10-05+8327e59f987e",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe I: 0,4% de complicações cardíacas maiores (Lee); 3,9% de morte, IAM ou PCR em 30 dias (CCS 2017)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe II a III: 0,9% (1 ponto) a 6,6% (2 pontos) pela coorte de Lee; 6,0% a 10,1% pela CCS 2017",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Considere BNP/NT-proBNP pré-operatório e troponina pós-operatória, conforme a diretriz.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe IV: 11% de complicações cardíacas maiores (Lee); 15% de morte, IAM ou PCR em 30 dias (CCS 2017)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Alto risco: avaliação cardiológica, otimização clínica e vigilância pós-operatória com troponina.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Class I: 0.4% major cardiac complications (Lee); 3.9% death, MI or CPR in 30 days (CCS 2017)",
+            "locale": "en",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Class II to III: 0.9% (1 point) to 6.6% (2 points) by the Lee cohort; 6.0% to 10.1% by CCS 2017",
+            "locale": "en",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "Consider preoperative BNP/NT-proBNP and postoperative troponin, as per the guideline.",
+            "locale": "en",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Class IV: 11% major cardiac complications (Lee); 15% death, MI or CPR in 30 days (CCS 2017)",
+            "locale": "en",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "High risk: cardiology evaluation, clinical optimization and postoperative troponin monitoring.",
+            "locale": "en",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Clase I: 0,4% de complicaciones cardíacas mayores (Lee); 3,9% de muerte, IAM o PCR en 30 días (CCS 2017)",
+            "locale": "es",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Clase II a III: 0,9% (1 punto) a 6,6% (2 puntos) según la cohorte de Lee; 6,0% a 10,1% según la CCS 2017",
+            "locale": "es",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "Considere BNP/NT-proBNP preoperatorio y troponina posoperatoria, según la guía.",
+            "locale": "es",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Clase IV: 11% de complicaciones cardíacas mayores (Lee); 15% de muerte, IAM o PCR en 30 días (CCS 2017)",
+            "locale": "es",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "Alto riesgo: evaluación cardiológica, optimización clínica y vigilancia posoperatoria con troponina.",
+            "locale": "es",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe I : 0,4 % de complications cardiaques majeures (Lee) ; 3,9 % de décès, IDM ou RCP en 30 jours (CCS 2017)",
+            "locale": "fr",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe II à III : 0,9 % (1 point) à 6,6 % (2 points) dans la cohorte de Lee ; 6,0 % à 10,1 % selon la CCS 2017",
+            "locale": "fr",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "Envisager le BNP/NT-proBNP préopératoire et la troponine postopératoire, conformément à la recommandation.",
+            "locale": "fr",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe IV : 11 % de complications cardiaques majeures (Lee) ; 15 % de décès, IDM ou RCP en 30 jours (CCS 2017)",
+            "locale": "fr",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "Risque élevé : évaluation cardiologique, optimisation clinique et surveillance postopératoire avec troponine.",
+            "locale": "fr",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Klasse I: 0,4 % schwere kardiale Komplikationen (Lee); 3,9 % Tod, MI oder CPR innerhalb von 30 Tagen (CCS 2017)",
+            "locale": "de",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Klasse II bis III: 0,9 % (1 Punkt) bis 6,6 % (2 Punkte) in der Lee-Kohorte; 6,0 % bis 10,1 % nach CCS 2017",
+            "locale": "de",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "Präoperatives BNP/NT-proBNP und postoperative Troponinbestimmung gemäß der Leitlinie in Betracht ziehen.",
+            "locale": "de",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Klasse IV: 11 % schwere kardiale Komplikationen (Lee); 15 % Tod, MI oder CPR innerhalb von 30 Tagen (CCS 2017)",
+            "locale": "de",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "Hohes Risiko: kardiologische Beurteilung, klinische Optimierung und postoperative Überwachung mit Troponin.",
+            "locale": "de",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe I: 0,4% di complicanze cardiache maggiori (Lee); 3,9% di morte, IM o RCP entro 30 giorni (CCS 2017)",
+            "locale": "it",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe II a III: dallo 0,9% (1 punto) al 6,6% (2 punti) nella coorte di Lee; dal 6,0% al 10,1% secondo CCS 2017",
+            "locale": "it",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "Considerare BNP/NT-proBNP preoperatorio e troponina postoperatoria, secondo la linea guida.",
+            "locale": "it",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Classe IV: 11% di complicanze cardiache maggiori (Lee); 15% di morte, IM o RCP entro 30 giorni (CCS 2017)",
+            "locale": "it",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "Alto rischio: valutazione cardiologica, ottimizzazione clinica e sorveglianza postoperatoria con troponina.",
+            "locale": "it",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة I: 0,4% من المضاعفات القلبية الكبرى (Lee)؛ 3,9% من الوفاة أو الاحتشاء القلبي الحاد أو الإنعاش القلبي الرئوي خلال 30 يومًا (CCS 2017)",
+            "locale": "ar",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة II إلى III: 0,9% (نقطة واحدة) إلى 6,6% (نقطتان) بحسب مجموعة Lee؛ 6,0% إلى 10,1% بحسب CCS 2017",
+            "locale": "ar",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "يُؤخذ في الاعتبار BNP/NT-proBNP قبل الجراحة والتروبونين بعد الجراحة، وفقًا للإرشادات.",
+            "locale": "ar",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفئة IV: 11% من المضاعفات القلبية الكبرى (Lee)؛ 15% من الوفاة أو الاحتشاء القلبي الحاد أو الإنعاش القلبي الرئوي خلال 30 يومًا (CCS 2017)",
+            "locale": "ar",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "خطورة مرتفعة: تقييم قلبي، تحسين سريري، ومراقبة ما بعد الجراحة بالتروبونين.",
+            "locale": "ar",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "I级：0.4%的主要心脏并发症（Lee）；30天内死亡、心肌梗死或心肺复苏为3.9%（CCS 2017）",
+            "locale": "zh",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "II至III级：按Lee队列为0.9%（1分）至6.6%（2分）；按CCS 2017为6.0%至10.1%",
+            "locale": "zh",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "根据指南，考虑术前BNP/NT-proBNP和术后肌钙蛋白。",
+            "locale": "zh",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "IV级：11%的主要心脏并发症（Lee）；30天内死亡、心肌梗死或心肺复苏为15%（CCS 2017）",
+            "locale": "zh",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "高风险：心脏科评估、临床优化及术后肌钙蛋白监测。",
+            "locale": "zh",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "クラスI：主要心臓合併症 0.4%（Lee）；30日以内の死亡、MI、またはCPR 3.9%（CCS 2017）",
+            "locale": "ja",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "クラスII～III：Leeコホートでは0.9%（1点）～6.6%（2点）；CCS 2017では6.0%～10.1%",
+            "locale": "ja",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "ガイドラインに従い、術前BNP/NT-proBNPおよび術後トロポニンを考慮する。",
+            "locale": "ja",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "クラスIV：主要心臓合併症 11%（Lee）；30日以内の死亡、MI、またはCPR 15%（CCS 2017）",
+            "locale": "ja",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "高リスク：循環器評価、臨床的最適化、ならびにトロポニンによる術後監視。",
+            "locale": "ja",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Nenhum fator: classe I",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "क्लास I: 0.4% प्रमुख हृदय संबंधी जटिलताएँ (Lee); 30 दिनों में 3.9% मृत्यु, MI या CPR (CCS 2017)",
+            "locale": "hi",
+            "template": "documented-authored-b668ea2b73076e2d166a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Cirurgia abdominal em diabético com insulina: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "क्लास II से III: Lee समूह में 0.9% (1 अंक) से 6.6% (2 अंक); CCS 2017 में 6.0% से 10.1%",
+            "locale": "hi",
+            "template": "documented-authored-45dfb8b002f9d99e1dce"
+          },
+          "note": {
+            "text": "दिशानिर्देश के अनुसार, प्रीऑपरेटिव BNP/NT-proBNP और पोस्टऑपरेटिव ट्रोपोनिन पर विचार करें।",
+            "locale": "hi",
+            "template": "documented-authored-c5315d313bcc78498751"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Cirurgia vascular, DAC e creatinina &gt; 2: 3 pontos (limite)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "क्लास IV: 11% प्रमुख हृदय संबंधी जटिलताएँ (Lee); 30 दिनों में 15% मृत्यु, MI या CPR (CCS 2017)",
+            "locale": "hi",
+            "template": "documented-authored-ca2288985162348e0e8e"
+          },
+          "note": {
+            "text": "उच्च जोखिम: कार्डियोलॉजी मूल्यांकन, नैदानिक अनुकूलन और ट्रोपोनिन के साथ पोस्टऑपरेटिव निगरानी।",
+            "locale": "hi",
+            "template": "documented-authored-a4eb2d5ea686eb1a7b8b"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
